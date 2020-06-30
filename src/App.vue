@@ -2,10 +2,20 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
+      <button class="mdc-icon-button material-icons">favorite</button>
       <router-link to="/about">About</router-link>
+      <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+        <li class="mdc-list-item" role="menuitem">
+          <span class="mdc-list-item__text">A Menu Item</span>
+        </li>
+        <li class="mdc-list-item" role="menuitem">
+          <span class="mdc-list-item__text">Another Menu Item</span>
+        </li>
+      </ul>
     </div>
     <router-view/>
   </div>
+
 </template>
 
 <style>
